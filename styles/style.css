@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Geist:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "IBM Plex Sans", serif;
+    font-style: normal;    
+    background-color: black;
+    margin: 0;
+    cursor: none; 
+    padding: 0;
+    color: white;
+}
+
+.section {
+    margin-top: 10px;
+}
+
+.section .display-1 {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.section .display-2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: none;
+}
+
+.transparent-text {
+    display: none;
+    font-size: 1.5rem; 
+    line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+    .section .display-1 {
+        font-size: 3rem;  
+    }
+    .section .display-2 {
+        font-size: 2rem;  /
+    }
+    .custom-cursor {
+        display: none;  
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .custom-cursor {
+        display: none;  
+    }
+}
+
+.transparent-text {
+    display: none;
+}
+
+.section.disabled span {
+    color: gray;
+    pointer-events: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22px; 
+    height: 22px;
+    background-image: url('../assets/images/icons8-select-cursor-24.png'); 
+    background-size: contain;
+    background-repeat: no-repeat; 
+    pointer-events: none; 
+    z-index: 9999; 
+    transform: translate(-50%, -50%); 
+}
