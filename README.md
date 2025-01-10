@@ -1,4 +1,3 @@
-Portfolio Website
 This is a personal portfolio website showcasing my work, skills, and achievements. It includes interactive sections, smooth scrolling, custom cursor functionality, and dynamic sound effects for user interactions.
 
 Features
